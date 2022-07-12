@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header-items {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  background-color: antiquewhite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header-item {
+  margin-right: 1rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #000;
+}
+
+.header-item-active {
+  border-bottom: 3px solid blue;
+}
+
+.header-item--selected {
+  color: blueviolet;
+  font-weight: bold;
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  object-position: center;
+  padding: 1rem;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.product-title {
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product {
+  width: 200px;
+  border: 1px solid #e2e2e2;
+  margin: 5px;
+  border-radius: 4px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.product-description {
+  padding: 10px;
+  background-color: #f2f2f2;
+  flex: 1 0 0;
+}
+
+.loading {
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  color: red;
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+
+.product-add-button {
+  padding: 5px;
+}
+
+.product-counter {
+  display: flex;
+}
+
+.product-counter-label {
+  padding: 5px;
+}
+
+.cart-list {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background-color: white;
+  width: 300px;
+  border-left: 1px solid #e2e2e2;
+}
+
+.cart-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: #f2f2f2;
+}
+
+.cart-item {
+  padding: 10px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.cart-item-title {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.cart-item-add {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: red;
+}
+
+.product-counter-heavy {
+  background-color: green;
+}
+
+.page {
+  margin-top: 80px;
+}
